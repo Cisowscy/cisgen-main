@@ -4,14 +4,23 @@
   "description": "github.com/Cisowscy/cisgen-main -> Grono-Teka.Cisowscy.com",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Cisowscy/cisgen-main.git"
   },
+  "keywords": [
+    "Cisowscy",
+    "CisGen",
+    "cisgen-main",
+    "Grono-Teka"
+  ],
   "author": "GitHub",
   "license": "Apache-2.0",
+  "devDependencies": {
+    "electron": "^1.4.12"
+  }
   "bugs": {
     "url": "https://github.com/Cisowscy/cisgen-main/issues"
   },
