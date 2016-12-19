@@ -1,28 +1,23 @@
 {
-  "name": "cisgen-main",
-  "version": "1.0.0",
-  "description": "github.com/Cisowscy/cisgen-main -> Grono-Teka.Cisowscy.com",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Cisowscy/cisgen-main.git"
-  },
-  "keywords": [
-    "Cisowscy",
-    "CisGen",
-    "cisgen-main",
-    "Grono-Teka"
-  ],
-  "author": "GitHub",
-  "license": "Apache-2.0",
-  "devDependencies": {
-    "electron": "^1.4.12"
-  }
-  "bugs": {
-    "url": "https://github.com/Cisowscy/cisgen-main/issues"
-  },
-  "homepage": "https://github.com/Cisowscy/cisgen-main#readme"
+    "name": "cisgen-main",
+    "version": "1.0.0",
+    "description": "github.com/Cisowscy/cisgen-main -> Grono-Teka.Cisowscy.com",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Cisowscy/cisgen-main.git"
+    },
+    "author": "GitHub",
+    "license": "Apache-2.0",
+    "devDependencies": {
+        "electron": "^1.4.12",
+        "jscs": "^3.0.7"
+    },
+    "bugs": {
+        "url": "https://github.com/Cisowscy/cisgen-main/issues"
+    },
+    "homepage": "https://github.com/Cisowscy/cisgen-main#readme"
 }

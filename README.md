@@ -32,18 +32,16 @@ npm start
 - **`docs`** // *folder z elementami README, WIKI, DOCS i PAGES*
 - **`main.js`** // *Uruchamia aplikację i tworzy okno przeglądarki* **ELECTRON** *do renderowania HTML. Jest to główny proces aplikacji.*
 - **`index.html`** // *Strona internetowa do renderowania. Jest to proces renderujący aplikacji.*
+- **`renderer.js`**  //**ELECTRON** *This file is required by the index.html file and will be executed in the renderer process for that window. All of the Node.js APIs are available in this process.*
 -  (brak na tym etapie) **`tsconfig.json`** // *plik cofig. angular2 TypeScript - wskazuje parametry kompilacji* 
 
 
 
 ## `package.json`
-1. ### moduły zależne
-```json
- "devDependencies": {
-    "electron": "^1.4.12"
-  }
-```
-
+1. ### biblioteki zależne ` "devDependencies"`
+>- [**electron** ^1.4.12](https://www.npmjs.com/package/electron)
+>- [**jscs** ^3.0.7](https://www.npmjs.com/package/jscs)
+> `npm outdated` // *komenda ta sprawdza i pokazuje czy są dostępne aktyualizacje bibliotek*
 
 2. ### skrypty
 
