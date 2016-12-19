@@ -1,37 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-    <link href="src/style.css" rel="stylesheet">
+<meta charset="utf-8">
+<title>Dokument bez tytułu</title>
+<!-- Dodaje Obsługe Nowszyszy elementów do starszych przeglądarek -->
+    <!-- <script type="text/javascript" src="node_modules\es6-shim\es6-shim.js"></script> -->
+    <!-- jQuery, -->
+    <script type="text/javascript" src="node_modules\jquery\dist\jquery.min.js"></script>
+    <!--  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> -->
+    <script type="text/javascript" src="node_modules\jquery-mobile\dist\jquery.mobile.min.js"></script>
+    <!-- Tether, -->
+    <script type="text/javascript" src="node_modules\tether\dist\js\tether.min.js"></script>
+    <script type="text/javascript" src="node_modules\tether-drop\dist\js\drop.min.js"></script>
+    <script type="text/javascript" src="node_modules\tether-select-2\dist\js\select.min.js"></script>
+    <script type="text/javascript" src="node_modules\tether-tooltip\dist\js\tooltip.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <script type="text/javascript" src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+    <!-- fullpage -->
+    <link rel="stylesheet" type="text/css" href="node_modules\fullpage.js\dist\jquery.fullpage.css">
+    <script type="text/javascript" src="node_modules\fullpage.js\dist\jquery.fullpage.js"></script>
+    <script type="text/javascript" src="src/config.fullpage.js"></script>
+    <!-- znaki specjalne Font Avesome-->
+    <link rel="stylesheet" type="text/css" href="node_modules\font-awesome\css\font-awesome.min.css">
+    <!-- być moze bedzie trzeba dodac css RESET, a to moj style pakiet -->
+    <link href="src/style3.css" rel="stylesheet">
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+
+		});
+	</script>
+    
 </head>
 
 <body>
-    <h1>Github.com/Cicowscy/cisgen -> Grono-Teka.Cisowscy.com</h1>
-    <img src="src/GRONO-TEKA_logo.webp" alt="Logo CisGen" style="width:600px;height:600px;">
-    <div>
-        <!-- All of the Node.js APIs are available in this renderer process. -->
-        <h3>We are using Node.js
-            <script>
-                document.write(process.versions.node)
-            </script>,
-        </h3>
-        <h3>Chromium
-            <script>
-                document.write(process.versions.chrome)
-            </script>, and
-        </h3>
-        <h3>Electron
-            <script>
-                document.write(process.versions.electron)
-            </script>.</h3>
-    </div>
+<nav>
+	<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">Sekcja 0</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Sekcja 1</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Sekcja 2</a></li>
+	<li data-menuanchor="4thpage"><a href="#4thpage">Sekcja 3</a></li>
+	<li><a id="close" href="javascript:window.close()">Zamknij</a></li>
+</ul>
+</nav>
+ 
+ <main id="fullpage">
+ <section class="section " id="section0">
+ 	<h1>CisGen_Grono-Teka</h1>
+		 <input type="hidden" name="id" value="1" />
+		<p>Faza rozwojowa projektu</p>
+		<img src="src/GRONO-TEKA_logo.webp" alt="logo" />
+ </section>
+ <section class="section active" id="section1">
+ 	<article class="slide">
+ 		<div class="intro">
+				<h1>tytul AA</h1>
+				<p>Wersja oprogramowania</p>
+				<button type="button" class="btn btn-outline-secondary">Node.js 
+            <span id="badge"><script>document.write(process.versions.node)
+        </script></span></button>
+        <button type="button" class="btn btn-outline-secondary">Chromium 
+            <span class="badge"> <script>document.write(process.versions.chrome)
+        </script></span></button>
+        <button type="button" class="btn btn-outline-secondary">Electron
+            <span class="badge"> <script>document.write(process.versions.electron)
+        </script></span></button>
+		</div>
+ 	</article>
+ 	<article class="slide">
+ 		<div class="intro">
+				<h1>tytul BB</h1>
+				<p>Spodziewając się dla obiecanej korzyści czyli wzór największej, czystej moralnej doskonałości. On tak mozolnej pracy.</p>
+		</div>
+ 	</article>
+ 	<article class="slide">
+ 		<div class="intro">
+				<h1>tytul CC</h1>
+				<p>Szczęśliwość jako też i dowodem Dobraj dobrotliwości. Miara szczęśliwości inaczej nastąpić, jak gdyby wszyscy nam także niebyło żadnego gruntu do.</p>
+			
+		</div>
+ 	</article>
+ 	<article class="slide">
+ 		<div class="intro">	
+ 				<h1>tytul DD</h1>
+				<p>Początek traktatu czasu być pomyślane jako świętego prawodawcę, jako jeszcze czuje w takim razie przestały być niemateryalną, bo ono.</p>
+			
+		</div>
+ 	</article>
+ </section>	
+ <section class="section " id="section2">
+ 	<div class="intro">
+			<h1>Sekcja 2</h1>
+			<p>Trzeba się w posiadłość. Wszakże kto cię trzeba cenić, ten odwiązywać, składać. Właśnie tym się biję, tego.</p>
+			
+		</div>
+ </section>
+ <section class="section " id="section3">
+ 	<div class="intro">
+			<h1>Sekcja 3</h1>
+			<p>
+				Rozpoznawają to jest istotną częścią moralności tj. on raczej czystym rozumem. Powinniśmy wszelką realność, która z przyrodzenia przestaje.
+				<br /><br /><br /><br /><br /><br />
+			</p>
+			
+		</div>
+ </section>
+ </main>
+  
+ 
 </body>
-
 <script>
     // You can also require other files to run in this process
     require('./renderer.js')
 </script>
-
 </html>

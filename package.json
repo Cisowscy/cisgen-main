@@ -14,7 +14,17 @@
     "license": "Apache-2.0",
     "devDependencies": {
         "electron": "^1.4.12",
-        "jscs": "^3.0.7"
+        "jscs": "^3.0.7",
+        "bootstrap": "^4.0.0-alpha.5",
+        "jquery": "^3.1.1",
+        "jquery-mobile": "^1.4.1",
+        "jquery-ui": "^1.12.1",
+        "font-awesome": "^4.7.0",
+        "tether": "^1.4.0",
+        "tether-drop": "^1.4.2",
+        "tether-tooltip": "^1.2.0",
+        "tether-select-2": "^1.1.8",
+		"fullpage.js": "^2.9.0"
     },
     "bugs": {
         "url": "https://github.com/Cisowscy/cisgen-main/issues"

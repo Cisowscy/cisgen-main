@@ -14,7 +14,7 @@ let mainWindow
 
 function createWindow() {
     // Tworzenie okna przeglądarki.
-    mainWindow = new BrowserWindow({ fullscreen: true, transparent: false, frame: false })
+    mainWindow = new BrowserWindow({ width: 800, height: 600, transparent: true, frame: false })
 
     // i załadowanie strony index.html do aplikacji.
     mainWindow.loadURL(url.format({

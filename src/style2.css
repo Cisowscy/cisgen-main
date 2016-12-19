@@ -1,11 +1,5 @@
-.panel-stopki {
-    background-color: #333333;
-    padding: 0;
-    color: white;
-}
-
 #sidebar {
-    background-color: #333333;
+    background-color: black;
     color: white;
     height: 100%;
     padding: 0;
@@ -13,7 +7,7 @@
     left: 0;
     top: 0;
     width: 60px;
-    z-index: 1;
+    z-index: 2;
 }
 
 #sidebar .link-text {
@@ -26,4 +20,16 @@
 
 #sidebar:hover {
     width: 200px;
+}
+
+#sidebar a {
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#sidebar-nav {
+    text-align: left;
+    font-size: 30px;
+    margin-top: 75px;
 }

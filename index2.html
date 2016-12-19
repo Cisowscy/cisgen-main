@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+
+    <!-- Dodaje Obsługe Nowszyszy elementów do starszych przeglądarek -->
+    <!-- <script type="text/javascript" src="node_modules\es6-shim\es6-shim.js"></script> -->
+    <!-- jQuery, -->
+    <script type="text/javascript" src="node_modules\jquery\dist\jquery.min.js"></script>
+    <!--  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> -->
+    <script type="text/javascript" src="node_modules\jquery-mobile\dist\jquery.mobile.min.js"></script>
+    <!-- Tether, -->
+    <script type="text/javascript" src="node_modules\tether\dist\js\tether.min.js"></script>
+    <script type="text/javascript" src="node_modules\tether-drop\dist\js\drop.min.js"></script>
+    <script type="text/javascript" src="node_modules\tether-select-2\dist\js\select.min.js"></script>
+    <script type="text/javascript" src="node_modules\tether-tooltip\dist\js\tooltip.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <script type="text/javascript" src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+    <!-- znaki specjalne Font Avesome-->
+    <link rel="stylesheet" type="text/css" href="node_modules\font-awesome\css\font-awesome.min.css">
+    <!-- być moze bedzie trzeba dodac css RESET, a to moj style pakiet -->
+    <link href="src/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <!--
+
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
+            <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-bars fa-stack-1x"></i>
+            </span>
+           
+        </button>
+            <div id="sidebar-nav">
+                <ul class="nav nav-stacked">
+                    <li><a><span class="glyphicon glyphicon-star"></span><span class="link-text">Link 1</span></a></li>
+                    <li><a><span class="glyphicon glyphicon-cloud"></span><span class="link-text">Link 1</span></a></li>
+                    <li><a><span class="glyphicon glyphicon-heart"></span><span class="link-text">Link 1</span></a></li>
+                </ul>
+            </div>
+        </div>
+        Sidebar End 
+    </nav> -->
+    <!-- <h1>Github.com/Cicowscy/cisgen -> Grono-Teka.Cisowscy.com</h1>
+    <img src="src/GRONO-TEKA_logo.webp" alt="Logo CisGen" style="width:600px;height:600px;">
+    
+
+
+    Close this Window -->
+    <nav id="sidebar" role="navigation">
+
+        <a class="btn btn-primary navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-label="Skip to main navigation">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+
+
+    </nav>
+
+    <footer class="navbar navbar-fixed-bottom panel-stopki bg-inverse">
+        <button type="button" class="btn btn-outline-secondary">Node.js 
+            <span id="badge"><script>document.write(process.versions.node)
+        </script></span></button>
+        <button type="button" class="btn btn-outline-secondary">Chromium 
+            <span class="badge"> <script>document.write(process.versions.chrome)
+        </script></span></button>
+        <button type="button" class="btn btn-outline-secondary">Electron
+            <span class="badge"> <script>document.write(process.versions.electron)
+        </script></span></button>
+        <a class="btn btn-danger float-xs-right" id="close" href="javascript:window.close()" aria-label="Delete">
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+        </a>
+    </footer>
+</body>
+
+<script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+</script>
+
+</html>
